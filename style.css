@@ -34,8 +34,11 @@ body {
     background: -webkit-linear-gradient(var(--near-green), var(--near-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
 }
+
+.header h1, .header input {
+    text-align: center;
+} 
 
 .header input {
     margin-top: 2rem;
@@ -45,7 +48,6 @@ body {
     border: none;
     outline: none;
     border-bottom: 2px solid var(--near-green);
-    text-align: center;
     font-size: 1.25rem;
     color: var(--near-white);
 }
@@ -53,6 +55,9 @@ body {
 .content .city {
     font-size: 2.25rem;
     font-weight: 500;
+}
+
+.content .city, .content .desc {
     margin-bottom: 10px;
 }
 
@@ -62,11 +67,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.content .desc {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.content .minmax {
+.content .desc, .content .minmax {
     font-size: 1.5rem;
 }
